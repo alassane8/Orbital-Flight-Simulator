@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import datetime
 
 @dataclass
 class Spaceship:
@@ -9,5 +10,5 @@ class Spaceship:
     maximum_operating_empty_weight_kg: float
     max_fuel_kg: float
 
-    created_at: field(default_factory=datetime.now)
-    updated_at: field(default_factory=datetime.now)
+    created_at: datetime = field(default_factory=datetime.now)
+    updated_at: datetime = field(default_factory=datetime.now)
