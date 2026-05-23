@@ -1,11 +1,13 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 
+from main.spaceflight.domain.spaceflight_status import SpaceFlightStatus
+
 @dataclass
 class Spaceflight: 
     id: str
     spaceflight_code: str
-    spaceflight_status: SpaceflightStatus
+    spaceflight_status: SpaceFlightStatus
     spaceship_id: str
     departure_lauch_site_id: str
     orbital_target_id: str
