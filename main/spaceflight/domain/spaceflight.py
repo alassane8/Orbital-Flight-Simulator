@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from main.spaceflight.domain.spaceflight_status import SpaceFlightStatus
+from spaceflight.domain.spaceflight_status import SpaceFlightStatus
 
 @dataclass
 class Spaceflight: 

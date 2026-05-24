@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
-import datetime
+from datetime import datetime
 
-from main.orbital_target.domain.orbit_type import OrbitType
+from orbital_target.domain.orbit_type import OrbitType
 
 @dataclass
 class Rocket:

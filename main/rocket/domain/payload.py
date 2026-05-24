@@ -1,9 +1,9 @@
     
 from dataclasses import dataclass, field
-import datetime
+from datetime import datetime
 
-from main.orbital_target.domain.orbit_type import OrbitType
-from main.rocket.domain.payload_category import PayloadCategory
+from orbital_target.domain.orbit_type import OrbitType
+from rocket.domain.payload_category import PayloadCategory
 
 
 @dataclass
