@@ -1,126 +1,94 @@
 {
-  "rockets": [
-    {
-      "id": "falcon-9-block-5",
-      "name": "Falcon 9 Block 5",
-      "manufacturer": "SpaceX",
-      "nb_stages": 2,
-      "max_payload_leo_kg": 22800,
-      "max_payload_geo_kg": 8300,
-      "max_fuel_kg": 395700,
-      "fuel_burn_rate_kg_per_s": 2507,
-      "max_thrust_kn": 7607,
-      "max_speed_m_s": 9200,
-      "fairing_diameter_m": 5.2,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "SUN_SYNCHRONOUS_ORBIT",
-        "MEDIUM_EARTH_ORBIT",
-        "GEOSTATIONARY_ORBIT",
-        "TRANS_LUNAR_INJECTION"
-      ],
-      "description": "Lanceur moyen réutilisable de référence — 1er étage récupérable"
-    },
-    {
-      "id": "falcon-heavy",
-      "name": "Falcon Heavy",
-      "manufacturer": "SpaceX",
-      "nb_stages": 2,
-      "max_payload_leo_kg": 63800,
-      "max_payload_geo_kg": 26700,
-      "max_fuel_kg": 1200000,
-      "fuel_burn_rate_kg_per_s": 7250,
-      "max_thrust_kn": 22819,
-      "max_speed_m_s": 9500,
-      "fairing_diameter_m": 5.2,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "SUN_SYNCHRONOUS_ORBIT",
-        "MEDIUM_EARTH_ORBIT",
-        "GEOSTATIONARY_ORBIT",
-        "HIGHLY_ELLIPTICAL_ORBIT",
-        "TRANS_LUNAR_INJECTION",
-        "LUNAR_ORBIT"
-      ],
-      "description": "Lanceur lourd tri-corps réutilisable — 3 boosters récupérables"
-    },
-    {
-      "id": "ariane-6-a62",
-      "name": "Ariane 6 (A62)",
-      "manufacturer": "ArianeGroup",
-      "nb_stages": 2,
-      "max_payload_leo_kg": 10350,
-      "max_payload_geo_kg": 4500,
-      "max_fuel_kg": 530000,
-      "fuel_burn_rate_kg_per_s": 2900,
-      "max_thrust_kn": 13400,
-      "max_speed_m_s": 9100,
-      "fairing_diameter_m": 5.4,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "SUN_SYNCHRONOUS_ORBIT",
-        "GEOSTATIONARY_ORBIT"
-      ],
-      "description": "Lanceur européen — version 2 boosters P120C"
-    },
-    {
-      "id": "ariane-6-a64",
-      "name": "Ariane 6 (A64)",
-      "manufacturer": "ArianeGroup",
-      "nb_stages": 2,
-      "max_payload_leo_kg": 21650,
-      "max_payload_geo_kg": 11500,
-      "max_fuel_kg": 660000,
-      "fuel_burn_rate_kg_per_s": 3500,
-      "max_thrust_kn": 15600,
-      "max_speed_m_s": 9300,
-      "fairing_diameter_m": 5.4,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "SUN_SYNCHRONOUS_ORBIT",
-        "MEDIUM_EARTH_ORBIT",
-        "GEOSTATIONARY_ORBIT",
-        "HIGHLY_ELLIPTICAL_ORBIT",
-        "TRANS_LUNAR_INJECTION"
-      ],
-      "description": "Lanceur européen — version 4 boosters P120C, configuration lourde"
-    },
-    {
-      "id": "vega-c",
-      "name": "Vega-C",
-      "manufacturer": "Avio / ESA",
-      "nb_stages": 4,
-      "max_payload_leo_kg": 2200,
-      "max_payload_geo_kg": 0,
-      "max_fuel_kg": 152000,
-      "fuel_burn_rate_kg_per_s": 870,
-      "max_thrust_kn": 3015,
-      "max_speed_m_s": 7900,
-      "fairing_diameter_m": 2.6,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "SUN_SYNCHRONOUS_ORBIT"
-      ],
-      "description": "Lanceur léger européen — idéal pour les petits satellites LEO/SSO"
-    },
-    {
-      "id": "sls-block-1",
-      "name": "SLS Block 1",
-      "manufacturer": "NASA / Boeing",
-      "nb_stages": 2,
-      "max_payload_leo_kg": 95000,
-      "max_payload_geo_kg": 0,
-      "max_fuel_kg": 2600000,
-      "fuel_burn_rate_kg_per_s": 12800,
-      "max_thrust_kn": 39144,
-      "max_speed_m_s": 11200,
-      "fairing_diameter_m": 8.4,
-      "compatible_orbit_types": [
-        "LOW_EARTH_ORBIT",
-        "TRANS_LUNAR_INJECTION",
-        "LUNAR_ORBIT"
-      ],
-      "description": "Lanceur super-lourd NASA — programme Artemis, missions lunaires habitées"
-    }
-  ]
+    "rockets": [
+        {
+            "id": "falcon-9-block-5",
+            "name": "Falcon 9 Block 5",
+            "manufacturer": "SpaceX",
+            "nb_stages": 2,
+            "max_payload_leo_kg": 22800,
+            "max_payload_geo_kg": 8300,
+            "max_fuel_kg": 395700,
+            "fuel_burn_rate_kg_per_s": 2507,
+            "max_thrust_kn": 7607,
+            "max_speed_m_s": 9200,
+            "fairing_diameter_m": 5.2,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "TRANS_LUNAR_INJECTION"],
+            "description": "Lanceur moyen réutilisable de référence — 1er étage récupérable"
+        },
+        {
+            "id": "falcon-heavy",
+            "name": "Falcon Heavy",
+            "manufacturer": "SpaceX",
+            "nb_stages": 2,
+            "max_payload_leo_kg": 63800,
+            "max_payload_geo_kg": 26700,
+            "max_fuel_kg": 1200000,
+            "fuel_burn_rate_kg_per_s": 7250,
+            "max_thrust_kn": 22819,
+            "max_speed_m_s": 9500,
+            "fairing_diameter_m": 5.2,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
+            "description": "Lanceur lourd tri-corps réutilisable — 3 boosters récupérables"
+        },
+        {
+            "id": "ariane-6-a62",
+            "name": "Ariane 6 (A62)",
+            "manufacturer": "ArianeGroup",
+            "nb_stages": 2,
+            "max_payload_leo_kg": 10350,
+            "max_payload_geo_kg": 4500,
+            "max_fuel_kg": 530000,
+            "fuel_burn_rate_kg_per_s": 2900,
+            "max_thrust_kn": 13400,
+            "max_speed_m_s": 9100,
+            "fairing_diameter_m": 5.4,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "GEOSTATIONARY_ORBIT"],
+            "description": "Lanceur européen — version 2 boosters P120C"
+        },
+        {
+            "id": "ariane-6-a64",
+            "name": "Ariane 6 (A64)",
+            "manufacturer": "ArianeGroup",
+            "nb_stages": 2,
+            "max_payload_leo_kg": 21650,
+            "max_payload_geo_kg": 11500,
+            "max_fuel_kg": 660000,
+            "fuel_burn_rate_kg_per_s": 3500,
+            "max_thrust_kn": 15600,
+            "max_speed_m_s": 9300,
+            "fairing_diameter_m": 5.4,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION"],
+            "description": "Lanceur européen — version 4 boosters P120C, configuration lourde"
+        },
+        {
+            "id": "vega-c",
+            "name": "Vega-C",
+            "manufacturer": "Avio / ESA",
+            "nb_stages": 4,
+            "max_payload_leo_kg": 2200,
+            "max_payload_geo_kg": 0,
+            "max_fuel_kg": 152000,
+            "fuel_burn_rate_kg_per_s": 870,
+            "max_thrust_kn": 3015,
+            "max_speed_m_s": 7900,
+            "fairing_diameter_m": 2.6,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
+            "description": "Lanceur léger européen — idéal pour les petits satellites LEO/SSO"
+        },
+        {
+            "id": "sls-block-1",
+            "name": "SLS Block 1",
+            "manufacturer": "NASA / Boeing",
+            "nb_stages": 2,
+            "max_payload_leo_kg": 95000,
+            "max_payload_geo_kg": 0,
+            "max_fuel_kg": 2600000,
+            "fuel_burn_rate_kg_per_s": 12800,
+            "max_thrust_kn": 39144,
+            "max_speed_m_s": 11200,
+            "fairing_diameter_m": 8.4,
+            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
+            "description": "Lanceur super-lourd NASA — programme Artemis, missions lunaires habitées"
+        }
+    ]
 }
