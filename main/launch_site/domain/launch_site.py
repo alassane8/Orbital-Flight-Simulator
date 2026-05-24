@@ -10,5 +10,5 @@ class LaunchSite:
     lat: float
     lon: float
 
-    created_at: field(default_factory=datetime.now)
-    updated_at: field(default_factory=datetime.now)
+    created_at: datetime = field(default_factory=datetime.now)
+    updated_at: datetime = field(default_factory=datetime.now)
