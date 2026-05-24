@@ -9,6 +9,9 @@ class LaunchSite:
     status: LaunchSiteStatus
     lat: float
     lon: float
+    name: str
+    country: str
+    operator: str
 
     created_at: datetime = field(default_factory=datetime.now)
     updated_at: datetime = field(default_factory=datetime.now)
