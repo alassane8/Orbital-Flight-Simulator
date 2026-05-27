@@ -4,7 +4,7 @@ import uuid
 
 from launch_site.domain.launch_site import LaunchSite
 from orbital_target.domain.orbital_target import OrbitalTarget
-from rocket.domain.payload import Payload
+from payload.domain.payload import Payload
 from rocket.domain.rocket import Rocket
 
 def create_rockets(rockets_data: dict) -> dict[Rocket]:

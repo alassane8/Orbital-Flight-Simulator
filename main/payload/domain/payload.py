@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 
 from orbital_target.domain.orbit_type import OrbitType
-from rocket.domain.payload_category import PayloadCategory
+from payload.domain.payload_category import PayloadCategory
 
 
 @dataclass
