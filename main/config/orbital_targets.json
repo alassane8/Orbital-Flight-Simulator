@@ -2,93 +2,93 @@
     "orbital_targets": [
         {
             "id": "iss",
-            "name": "Station spatiale internationale (ISS)",
+            "name": "International Space Station (ISS)",
             "orbit_type": "LOW_EARTH_ORBIT",
             "altitude_perigee_km": 408,
             "altitude_apogee_km": 410,
             "inclination_deg": 51.6,
-            "description": "Orbite basse circulaire — rendez-vous avec l'ISS"
+            "description": "Circular low Earth orbit - rendezvous with the ISS"
         },
         {
             "id": "leo-polar",
-            "name": "Orbite polaire basse",
+            "name": "Low Polar Orbit",
             "orbit_type": "LOW_EARTH_ORBIT",
             "altitude_perigee_km": 550,
             "altitude_apogee_km": 550,
             "inclination_deg": 90.0,
-            "description": "Orbite basse à couverture polaire complète"
+            "description": "Low orbit with full polar coverage"
         },
         {
             "id": "leo-equatorial",
-            "name": "Orbite équatoriale basse",
+            "name": "Low Equatorial Orbit",
             "orbit_type": "LOW_EARTH_ORBIT",
             "altitude_perigee_km": 500,
             "altitude_apogee_km": 500,
             "inclination_deg": 0.0,
-            "description": "Orbite basse équatoriale — idéale pour les constellations"
+            "description": "Low equatorial orbit - ideal for constellations"
         },
         {
             "id": "sun-synchronous",
-            "name": "Orbite héliosynchrone",
+            "name": "Sun-Synchronous Orbit",
             "orbit_type": "SUN_SYNCHRONOUS_ORBIT",
             "altitude_perigee_km": 600,
             "altitude_apogee_km": 600,
             "inclination_deg": 97.8,
-            "description": "Orbite polaire légèrement rétrograde — éclairage solaire constant, idéale pour l'observation terrestre"
+            "description": "Slightly retrograde polar orbit - constant solar lighting, ideal for Earth observation"
         },
         {
             "id": "gps-meo",
-            "name": "Orbite MEO (GPS)",
+            "name": "MEO Orbit (GPS)",
             "orbit_type": "MEDIUM_EARTH_ORBIT",
             "altitude_perigee_km": 20200,
             "altitude_apogee_km": 20200,
             "inclination_deg": 55.0,
-            "description": "Orbite moyenne circulaire — altitude des satellites GPS/Galileo"
+            "description": "Circular medium Earth orbit - altitude of GPS/Galileo satellites"
         },
         {
             "id": "geo-telecom",
-            "name": "Orbite géostationnaire (GEO)",
+            "name": "Geostationary Orbit (GEO)",
             "orbit_type": "GEOSTATIONARY_ORBIT",
             "altitude_perigee_km": 35786,
             "altitude_apogee_km": 35786,
             "inclination_deg": 0.0,
-            "description": "Orbite géostationnaire — satellite fixe par rapport au sol, télécoms et météo"
+            "description": "Geostationary orbit - satellite fixed relative to the ground, used for telecom and weather"
         },
         {
             "id": "geo-transfer",
-            "name": "Orbite de transfert géostationnaire (GTO)",
+            "name": "Geostationary Transfer Orbit (GTO)",
             "orbit_type": "GEOSTATIONARY_ORBIT",
             "altitude_perigee_km": 250,
             "altitude_apogee_km": 35786,
             "inclination_deg": 6.0,
-            "description": "Ellipse de transfert Hohmann vers le GEO — périgée bas, apogée à 35 786 km"
+            "description": "Hohmann transfer ellipse to GEO - low perigee, apogee at 35,786 km"
         },
         {
             "id": "molniya",
-            "name": "Orbite de Molniya",
+            "name": "Molniya Orbit",
             "orbit_type": "HIGHLY_ELLIPTICAL_ORBIT",
             "altitude_perigee_km": 600,
             "altitude_apogee_km": 39750,
             "inclination_deg": 63.4,
-            "description": "Orbite très elliptique — longue station au-dessus des hautes latitudes, utilisée par la Russie"
+            "description": "Highly elliptical orbit - long dwell time over high latitudes, used by Russia"
         },
         {
             "id": "lunar-transfer",
-            "name": "Injection trans-lunaire (TLI)",
+            "name": "Trans-Lunar Injection (TLI)",
             "orbit_type": "TRANS_LUNAR_INJECTION",
             "altitude_perigee_km": 185,
             "altitude_apogee_km": 384400,
             "inclination_deg": 28.5,
-            "description": "Trajectoire d'éjection vers la Lune depuis une orbite de parking LEO"
+            "description": "Ejection trajectory toward the Moon from a LEO parking orbit"
         },
         {
             "id": "lunar-orbit",
-            "name": "Orbite lunaire basse (LLO)",
+            "name": "Low Lunar Orbit (LLO)",
             "orbit_type": "LUNAR_ORBIT",
             "altitude_perigee_km": 100,
             "altitude_apogee_km": 100,
             "inclination_deg": 0.0,
-            "description": "Orbite circulaire basse autour de la Lune — altitude typique des missions Apollo"
+            "description": "Low circular orbit around the Moon - typical altitude of Apollo missions"
         }
     ]
 }

@@ -6,87 +6,87 @@
             "mass_kg": 12,
             "category": "NANOSATELLITE",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Petit satellite de recherche universitaire ou commercial — format standardisé 6 unités"
+            "description": "Small university or commercial research satellite - standardized 6-unit form factor"
         },
         {
             "id": "earth-observation-satellite",
-            "name": "Satellite d'observation terrestre",
+            "name": "Earth Observation Satellite",
             "mass_kg": 1200,
             "category": "EARTH_OBSERVATION",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Satellite imagerie optique haute résolution — orbite héliosynchrone pour éclairage constant"
+            "description": "High-resolution optical imaging satellite - sun-synchronous orbit for consistent lighting"
         },
         {
             "id": "weather-satellite-leo",
-            "name": "Satellite météorologique LEO",
+            "name": "LEO Weather Satellite",
             "mass_kg": 1500,
             "category": "METEOROLOGY",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Satellite de prévision météo en orbite basse — couverture globale par défilé"
+            "description": "Low-orbit meteorological satellite - global coverage through successive passes"
         },
         {
             "id": "telecom-satellite-geo",
-            "name": "Satellite de télécommunication GEO",
+            "name": "GEO Telecommunications Satellite",
             "mass_kg": 5800,
             "category": "TELECOMMUNICATIONS",
             "compatible_orbit_types": ["GEOSTATIONARY_ORBIT"],
-            "description": "Satellite de diffusion TV et internet haut débit — position fixe au-dessus de l'équateur"
+            "description": "Broadband internet and TV broadcast satellite - fixed position above the equator"
         },
         {
             "id": "weather-satellite-geo",
-            "name": "Satellite météorologique géostationnaire",
+            "name": "Geostationary Weather Satellite",
             "mass_kg": 3200,
             "category": "METEOROLOGY",
             "compatible_orbit_types": ["GEOSTATIONARY_ORBIT"],
-            "description": "Satellite météo GEO — surveillance continue d'une zone fixe (ex. Meteosat)"
+            "description": "GEO meteorological satellite - continuous monitoring of a fixed zone (e.g. Meteosat)"
         },
         {
             "id": "gps-navigation-satellite",
-            "name": "Satellite de navigation (GPS / Galileo)",
+            "name": "Navigation Satellite (GPS / Galileo)",
             "mass_kg": 730,
             "category": "NAVIGATION",
             "compatible_orbit_types": ["MEDIUM_EARTH_ORBIT"],
-            "description": "Satellite de positionnement en orbite moyenne — contribue à une constellation de navigation"
+            "description": "Positioning satellite in medium Earth orbit - contributes to a navigation constellation"
         },
         {
             "id": "spy-satellite",
-            "name": "Satellite de reconnaissance",
+            "name": "Reconnaissance Satellite",
             "mass_kg": 2800,
             "category": "INTELLIGENCE",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT"],
-            "description": "Satellite d'imagerie militaire haute résolution — orbite basse ou elliptique selon la mission"
+            "description": "High-resolution military imaging satellite - low or elliptical orbit depending on mission"
         },
         {
             "id": "iss-resupply",
-            "name": "Module de ravitaillement ISS",
+            "name": "ISS Resupply Module",
             "mass_kg": 6000,
             "category": "CARGO",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT"],
-            "description": "Cargo de ravitaillement en vivres, carburant et matériel scientifique pour l'ISS"
+            "description": "Cargo vehicle delivering food, fuel, and scientific equipment to the ISS"
         },
         {
             "id": "space-telescope",
-            "name": "Télescope spatial",
+            "name": "Space Telescope",
             "mass_kg": 6500,
             "category": "SCIENTIFIC",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT"],
-            "description": "Observatoire orbital — imagerie astronomique en lumière visible, infrarouge ou UV"
+            "description": "Orbital observatory - astronomical imaging in visible, infrared, or UV light"
         },
         {
             "id": "lunar-probe",
-            "name": "Sonde lunaire",
+            "name": "Lunar Probe",
             "mass_kg": 4500,
             "category": "EXPLORATION",
             "compatible_orbit_types": ["TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Sonde d'exploration — cartographie de surface, analyse minéralogique, préparation de missions habitées"
+            "description": "Exploration probe - surface mapping, mineralogical analysis, and crewed mission preparation"
         },
         {
             "id": "crewed-capsule",
-            "name": "Capsule habitée",
+            "name": "Crewed Capsule",
             "mass_kg": 13500,
             "category": "CREWED",
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Vaisseau habité pour missions LEO ou lunaires — 4 à 6 astronautes"
+            "description": "Crewed spacecraft for LEO or lunar missions - 4 to 6 astronauts"
         }
     ]
 }

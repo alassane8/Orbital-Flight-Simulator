@@ -13,7 +13,7 @@
             "max_speed_m_s": 9200,
             "fairing_diameter_m": 5.2,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "TRANS_LUNAR_INJECTION"],
-            "description": "Lanceur moyen réutilisable de référence — 1er étage récupérable"
+            "description": "Reusable medium-lift launch vehicle - recoverable first stage"
         },
         {
             "id": "falcon-heavy",
@@ -28,7 +28,7 @@
             "max_speed_m_s": 9500,
             "fairing_diameter_m": 5.2,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Lanceur lourd tri-corps réutilisable — 3 boosters récupérables"
+            "description": "Reusable heavy-lift tri-core launch vehicle - 3 recoverable boosters"
         },
         {
             "id": "ariane-6-a62",
@@ -43,7 +43,7 @@
             "max_speed_m_s": 9100,
             "fairing_diameter_m": 5.4,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "GEOSTATIONARY_ORBIT"],
-            "description": "Lanceur européen — version 2 boosters P120C"
+            "description": "European launch vehicle - 2 P120C booster configuration"
         },
         {
             "id": "ariane-6-a64",
@@ -58,7 +58,7 @@
             "max_speed_m_s": 9300,
             "fairing_diameter_m": 5.4,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION"],
-            "description": "Lanceur européen — version 4 boosters P120C, configuration lourde"
+            "description": "European launch vehicle - 4 P120C boosters, heavy-lift configuration"
         },
         {
             "id": "vega-c",
@@ -73,7 +73,7 @@
             "max_speed_m_s": 7900,
             "fairing_diameter_m": 2.6,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Lanceur léger européen — idéal pour les petits satellites LEO/SSO"
+            "description": "European light launch vehicle - ideal for small LEO/SSO satellites"
         },
         {
             "id": "sls-block-1",
@@ -88,7 +88,7 @@
             "max_speed_m_s": 11200,
             "fairing_diameter_m": 8.4,
             "compatible_orbit_types": ["LOW_EARTH_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Lanceur super-lourd NASA — programme Artemis, missions lunaires habitées"
+            "description": "NASA super heavy-lift launch vehicle - Artemis program, crewed lunar missions"
         }
     ]
 }
