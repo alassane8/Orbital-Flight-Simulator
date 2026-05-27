@@ -41,3 +41,5 @@ def init_simulator_data():
     init_logger.loading("Initializing rockets")
     rockets = object_factory.create_rockets(rockets_data)
     init_logger.success(f"{len(rockets)} rockets operational")
+    
+    return launch_sites, orbital_targets, payloads, rockets
