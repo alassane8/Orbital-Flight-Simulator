@@ -9,7 +9,7 @@ def main() -> int:
     
     rocket = rocket_service.select_rocket(rockets)
     orbital_target = orbital_target_service.select_orbital_target(rocket, orbital_targets)
-    #payload = payload_service.add_payloads_to_rocket(rocket, payloads, orbital_target)
+    payload = payload_service.add_payloads_to_rocket(rocket, payloads, orbital_target)
     # choosing launch_site based on rocket manufacturer
     # coompute fuel based on launch site weigth payloads orbital targets.
     # choosing orbital target based on operating weight fuel position of target and lauch site position
