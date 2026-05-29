@@ -1,3 +1,4 @@
+from launch_site.application.launch_site_service import select_launch_site
 from orbital_target.application import orbital_target_service
 from payload.application import payload_service
 from rocket.application import rocket_service
@@ -9,10 +10,11 @@ def main() -> int:
     
     rocket = rocket_service.select_rocket(rockets)
     orbital_target = orbital_target_service.select_orbital_target(rocket, orbital_targets)
+    launch_site = select_launch_site(rocket, orbital_target, launch_sites)
     payload = payload_service.add_payloads_to_rocket(rocket, payloads)
-    # choosing launch_site based on rocket manufacturer
-    # coompute fuel based on launch site weigth payloads orbital targets.
-    # choosing orbital target based on operating weight fuel position of target and lauch site position
+    #delta_v     → compute_delta_v(launch_site, target) ← physique réelle
+    #fuel_kg     → compute_fuel(rocket, payloads, delta_v) ← Tsiolkovsky
+    
     return 0
 
 
