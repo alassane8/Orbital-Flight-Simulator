@@ -1,0 +1,41 @@
+#pragma once
+
+#include <string>
+
+enum class OrbitType {
+    LOW_EARTH_ORBIT,
+    MEDIUM_EARTH_ORBIT,
+    GEOSTATIONARY_ORBIT,
+    GEOSYNCHRONOUS_ORBIT,
+    SUN_SYNCHRONOUS_ORBIT,
+    HIGHLY_ELLIPTICAL_ORBIT,
+    TRANS_LUNAR_INJECTION,
+    LUNAR_ORBIT
+};
+
+enum class LaunchSiteStatus {
+    ACTIVE,
+    INACTIVE,
+    UNDER_CONSTRUCTION
+};
+
+enum class PayloadCategory {
+    NANOSATELLITE,
+    EARTH_OBSERVATION,
+    METEOROLOGY,
+    TELECOMMUNICATIONS,
+    NAVIGATION,
+    INTELLIGENCE,
+    CARGO,
+    SCIENTIFIC,
+    EXPLORATION,
+    CREWED
+};
+
+enum class SpaceflightStatus {
+    INITIALIZING,
+    LAUNCHING,
+    IN_ORBIT,
+    COMPLETED,
+    FAILED
+};
