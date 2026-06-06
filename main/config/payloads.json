@@ -1,92 +1,135 @@
 {
-    "payloads": [
-        {
-            "id": "cubesat-6u",
-            "name": "CubeSat 6U",
-            "mass_kg": 12,
-            "category": "NANOSATELLITE",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Small university or commercial research satellite - standardized 6-unit form factor"
-        },
-        {
-            "id": "earth-observation-satellite",
-            "name": "Earth Observation Satellite",
-            "mass_kg": 1200,
-            "category": "EARTH_OBSERVATION",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "High-resolution optical imaging satellite - sun-synchronous orbit for consistent lighting"
-        },
-        {
-            "id": "weather-satellite-leo",
-            "name": "LEO Weather Satellite",
-            "mass_kg": 1500,
-            "category": "METEOROLOGY",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "Low-orbit meteorological satellite - global coverage through successive passes"
-        },
-        {
-            "id": "telecom-satellite-geo",
-            "name": "GEO Telecommunications Satellite",
-            "mass_kg": 5800,
-            "category": "TELECOMMUNICATIONS",
-            "compatible_orbit_types": ["GEOSTATIONARY_ORBIT"],
-            "description": "Broadband internet and TV broadcast satellite - fixed position above the equator"
-        },
-        {
-            "id": "weather-satellite-geo",
-            "name": "Geostationary Weather Satellite",
-            "mass_kg": 3200,
-            "category": "METEOROLOGY",
-            "compatible_orbit_types": ["GEOSTATIONARY_ORBIT"],
-            "description": "GEO meteorological satellite - continuous monitoring of a fixed zone (e.g. Meteosat)"
-        },
-        {
-            "id": "gps-navigation-satellite",
-            "name": "Navigation Satellite (GPS / Galileo)",
-            "mass_kg": 730,
-            "category": "NAVIGATION",
-            "compatible_orbit_types": ["MEDIUM_EARTH_ORBIT"],
-            "description": "Positioning satellite in medium Earth orbit - contributes to a navigation constellation"
-        },
-        {
-            "id": "spy-satellite",
-            "name": "Reconnaissance Satellite",
-            "mass_kg": 2800,
-            "category": "INTELLIGENCE",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT"],
-            "description": "High-resolution military imaging satellite - low or elliptical orbit depending on mission"
-        },
-        {
-            "id": "iss-resupply",
-            "name": "ISS Resupply Module",
-            "mass_kg": 6000,
-            "category": "CARGO",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT"],
-            "description": "Cargo vehicle delivering food, fuel, and scientific equipment to the ISS"
-        },
-        {
-            "id": "space-telescope",
-            "name": "Space Telescope",
-            "mass_kg": 6500,
-            "category": "SCIENTIFIC",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT"],
-            "description": "Orbital observatory - astronomical imaging in visible, infrared, or UV light"
-        },
-        {
-            "id": "lunar-probe",
-            "name": "Lunar Probe",
-            "mass_kg": 4500,
-            "category": "EXPLORATION",
-            "compatible_orbit_types": ["TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Exploration probe - surface mapping, mineralogical analysis, and crewed mission preparation"
-        },
-        {
-            "id": "crewed-capsule",
-            "name": "Crewed Capsule",
-            "mass_kg": 13500,
-            "category": "CREWED",
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Crewed spacecraft for LEO or lunar missions - 4 to 6 astronauts"
-        }
-    ]
+  "payloads": [
+    {
+      "id": "p-001",
+      "code": "CS6U",
+      "name": "CubeSat 6U",
+      "mass_kg": 12,
+      "category": "NANOSATELLITE",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT"
+      ],
+      "description": "Small university or commercial research satellite - standardized 6-unit form factor"
+    },
+    {
+      "id": "p-002",
+      "code": "EOS",
+      "name": "Earth Observation Satellite",
+      "mass_kg": 1200,
+      "category": "EARTH_OBSERVATION",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT"
+      ],
+      "description": "High-resolution optical imaging satellite - sun-synchronous orbit for consistent lighting"
+    },
+    {
+      "id": "p-003",
+      "code": "WLEO",
+      "name": "LEO Weather Satellite",
+      "mass_kg": 1500,
+      "category": "METEOROLOGY",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT"
+      ],
+      "description": "Low-orbit meteorological satellite - global coverage through successive passes"
+    },
+    {
+      "id": "p-004",
+      "code": "TGEO",
+      "name": "GEO Telecommunications Satellite",
+      "mass_kg": 5800,
+      "category": "TELECOMMUNICATIONS",
+      "compatible_orbit_types": [
+        "GEOSTATIONARY_ORBIT"
+      ],
+      "description": "Broadband internet and TV broadcast satellite - fixed position above the equator"
+    },
+    {
+      "id": "p-005",
+      "code": "WGEO",
+      "name": "Geostationary Weather Satellite",
+      "mass_kg": 3200,
+      "category": "METEOROLOGY",
+      "compatible_orbit_types": [
+        "GEOSTATIONARY_ORBIT"
+      ],
+      "description": "GEO meteorological satellite - continuous monitoring of a fixed zone (e.g. Meteosat)"
+    },
+    {
+      "id": "p-006",
+      "code": "NAV",
+      "name": "Navigation Satellite (GPS / Galileo)",
+      "mass_kg": 730,
+      "category": "NAVIGATION",
+      "compatible_orbit_types": [
+        "MEDIUM_EARTH_ORBIT"
+      ],
+      "description": "Positioning satellite in medium Earth orbit - contributes to a navigation constellation"
+    },
+    {
+      "id": "p-007",
+      "code": "RECO",
+      "name": "Reconnaissance Satellite",
+      "mass_kg": 2800,
+      "category": "INTELLIGENCE",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "HIGHLY_ELLIPTICAL_ORBIT"
+      ],
+      "description": "High-resolution military imaging satellite - low or elliptical orbit depending on mission"
+    },
+    {
+      "id": "p-008",
+      "code": "ISSR",
+      "name": "ISS Resupply Module",
+      "mass_kg": 6000,
+      "category": "CARGO",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT"
+      ],
+      "description": "Cargo vehicle delivering food, fuel, and scientific equipment to the ISS"
+    },
+    {
+      "id": "p-009",
+      "code": "STEL",
+      "name": "Space Telescope",
+      "mass_kg": 6500,
+      "category": "SCIENTIFIC",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "HIGHLY_ELLIPTICAL_ORBIT"
+      ],
+      "description": "Orbital observatory - astronomical imaging in visible, infrared, or UV light"
+    },
+    {
+      "id": "p-010",
+      "code": "LNP",
+      "name": "Lunar Probe",
+      "mass_kg": 4500,
+      "category": "EXPLORATION",
+      "compatible_orbit_types": [
+        "TRANS_LUNAR_INJECTION",
+        "LUNAR_ORBIT"
+      ],
+      "description": "Exploration probe - surface mapping, mineralogical analysis, and crewed mission preparation"
+    },
+    {
+      "id": "p-011",
+      "code": "CPC",
+      "name": "Crewed Capsule",
+      "mass_kg": 13500,
+      "category": "CREWED",
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "TRANS_LUNAR_INJECTION",
+        "LUNAR_ORBIT"
+      ],
+      "description": "Crewed spacecraft for LEO or lunar missions - 4 to 6 astronauts"
+    }
+  ]
 }

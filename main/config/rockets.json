@@ -1,94 +1,132 @@
 {
-    "rockets": [
-        {
-            "id": "falcon-9-block-5",
-            "name": "Falcon 9 Block 5",
-            "manufacturer": "SpaceX",
-            "nb_stages": 2,
-            "max_payload_leo_kg": 22800,
-            "max_payload_geo_kg": 8300,
-            "max_fuel_kg": 395700,
-            "fuel_burn_rate_kg_per_s": 2507,
-            "max_thrust_kn": 7607,
-            "max_speed_m_s": 9200,
-            "fairing_diameter_m": 5.2,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "TRANS_LUNAR_INJECTION"],
-            "description": "Reusable medium-lift launch vehicle - recoverable first stage"
-        },
-        {
-            "id": "falcon-heavy",
-            "name": "Falcon Heavy",
-            "manufacturer": "SpaceX",
-            "nb_stages": 2,
-            "max_payload_leo_kg": 63800,
-            "max_payload_geo_kg": 26700,
-            "max_fuel_kg": 1200000,
-            "fuel_burn_rate_kg_per_s": 7250,
-            "max_thrust_kn": 22819,
-            "max_speed_m_s": 9500,
-            "fairing_diameter_m": 5.2,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "Reusable heavy-lift tri-core launch vehicle - 3 recoverable boosters"
-        },
-        {
-            "id": "ariane-6-a62",
-            "name": "Ariane 6 (A62)",
-            "manufacturer": "ArianeGroup",
-            "nb_stages": 2,
-            "max_payload_leo_kg": 10350,
-            "max_payload_geo_kg": 4500,
-            "max_fuel_kg": 530000,
-            "fuel_burn_rate_kg_per_s": 2900,
-            "max_thrust_kn": 13400,
-            "max_speed_m_s": 9100,
-            "fairing_diameter_m": 5.4,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "GEOSTATIONARY_ORBIT"],
-            "description": "European launch vehicle - 2 P120C booster configuration"
-        },
-        {
-            "id": "ariane-6-a64",
-            "name": "Ariane 6 (A64)",
-            "manufacturer": "ArianeGroup",
-            "nb_stages": 2,
-            "max_payload_leo_kg": 21650,
-            "max_payload_geo_kg": 11500,
-            "max_fuel_kg": 660000,
-            "fuel_burn_rate_kg_per_s": 3500,
-            "max_thrust_kn": 15600,
-            "max_speed_m_s": 9300,
-            "fairing_diameter_m": 5.4,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT", "MEDIUM_EARTH_ORBIT", "GEOSTATIONARY_ORBIT", "HIGHLY_ELLIPTICAL_ORBIT", "TRANS_LUNAR_INJECTION"],
-            "description": "European launch vehicle - 4 P120C boosters, heavy-lift configuration"
-        },
-        {
-            "id": "vega-c",
-            "name": "Vega-C",
-            "manufacturer": "Avio / ESA",
-            "nb_stages": 4,
-            "max_payload_leo_kg": 2200,
-            "max_payload_geo_kg": 0,
-            "max_fuel_kg": 152000,
-            "fuel_burn_rate_kg_per_s": 870,
-            "max_thrust_kn": 3015,
-            "max_speed_m_s": 7900,
-            "fairing_diameter_m": 2.6,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "SUN_SYNCHRONOUS_ORBIT"],
-            "description": "European light launch vehicle - ideal for small LEO/SSO satellites"
-        },
-        {
-            "id": "sls-block-1",
-            "name": "SLS Block 1",
-            "manufacturer": "NASA / Boeing",
-            "nb_stages": 2,
-            "max_payload_leo_kg": 95000,
-            "max_payload_geo_kg": 0,
-            "max_fuel_kg": 2600000,
-            "fuel_burn_rate_kg_per_s": 12800,
-            "max_thrust_kn": 39144,
-            "max_speed_m_s": 11200,
-            "fairing_diameter_m": 8.4,
-            "compatible_orbit_types": ["LOW_EARTH_ORBIT", "TRANS_LUNAR_INJECTION", "LUNAR_ORBIT"],
-            "description": "NASA super heavy-lift launch vehicle - Artemis program, crewed lunar missions"
-        }
-    ]
+  "rockets": [
+    {
+      "id": "r-001",
+      "code": "F9B5",
+      "name": "Falcon 9 Block 5",
+      "manufacturer": "SpaceX",
+      "nb_stages": 2,
+      "max_payload_leo_kg": 22800,
+      "max_payload_geo_kg": 8300,
+      "max_fuel_kg": 395700,
+      "fuel_burn_rate_kg_per_s": 2507,
+      "max_thrust_kn": 7607,
+      "max_speed_m_s": 9200,
+      "fairing_diameter_m": 5.2,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "MEDIUM_EARTH_ORBIT",
+        "GEOSTATIONARY_ORBIT",
+        "TRANS_LUNAR_INJECTION"
+      ],
+      "description": "Reusable medium-lift launch vehicle - recoverable first stage"
+    },
+    {
+      "id": "r-002",
+      "code": "FH",
+      "name": "Falcon Heavy",
+      "manufacturer": "SpaceX",
+      "nb_stages": 2,
+      "max_payload_leo_kg": 63800,
+      "max_payload_geo_kg": 26700,
+      "max_fuel_kg": 1200000,
+      "fuel_burn_rate_kg_per_s": 7250,
+      "max_thrust_kn": 22819,
+      "max_speed_m_s": 9500,
+      "fairing_diameter_m": 5.2,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "MEDIUM_EARTH_ORBIT",
+        "GEOSTATIONARY_ORBIT",
+        "HIGHLY_ELLIPTICAL_ORBIT",
+        "TRANS_LUNAR_INJECTION",
+        "LUNAR_ORBIT"
+      ],
+      "description": "Reusable heavy-lift tri-core launch vehicle - 3 recoverable boosters"
+    },
+    {
+      "id": "r-003",
+      "code": "A62",
+      "name": "Ariane 6 (A62)",
+      "manufacturer": "ArianeGroup",
+      "nb_stages": 2,
+      "max_payload_leo_kg": 10350,
+      "max_payload_geo_kg": 4500,
+      "max_fuel_kg": 530000,
+      "fuel_burn_rate_kg_per_s": 2900,
+      "max_thrust_kn": 13400,
+      "max_speed_m_s": 9100,
+      "fairing_diameter_m": 5.4,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "GEOSTATIONARY_ORBIT"
+      ],
+      "description": "European launch vehicle - 2 P120C booster configuration"
+    },
+    {
+      "id": "r-004",
+      "code": "A64",
+      "name": "Ariane 6 (A64)",
+      "manufacturer": "ArianeGroup",
+      "nb_stages": 2,
+      "max_payload_leo_kg": 21650,
+      "max_payload_geo_kg": 11500,
+      "max_fuel_kg": 660000,
+      "fuel_burn_rate_kg_per_s": 3500,
+      "max_thrust_kn": 15600,
+      "max_speed_m_s": 9300,
+      "fairing_diameter_m": 5.4,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT",
+        "MEDIUM_EARTH_ORBIT",
+        "GEOSTATIONARY_ORBIT",
+        "HIGHLY_ELLIPTICAL_ORBIT",
+        "TRANS_LUNAR_INJECTION"
+      ],
+      "description": "European launch vehicle - 4 P120C boosters, heavy-lift configuration"
+    },
+    {
+      "id": "r-005",
+      "code": "VGC",
+      "name": "Vega-C",
+      "manufacturer": "Avio / ESA",
+      "nb_stages": 4,
+      "max_payload_leo_kg": 2200,
+      "max_payload_geo_kg": 0,
+      "max_fuel_kg": 152000,
+      "fuel_burn_rate_kg_per_s": 870,
+      "max_thrust_kn": 3015,
+      "max_speed_m_s": 7900,
+      "fairing_diameter_m": 2.6,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "SUN_SYNCHRONOUS_ORBIT"
+      ],
+      "description": "European light launch vehicle - ideal for small LEO/SSO satellites"
+    },
+    {
+      "id": "r-006",
+      "code": "SLS1",
+      "name": "SLS Block 1",
+      "manufacturer": "NASA / Boeing",
+      "nb_stages": 2,
+      "max_payload_leo_kg": 95000,
+      "max_payload_geo_kg": 0,
+      "max_fuel_kg": 2600000,
+      "fuel_burn_rate_kg_per_s": 12800,
+      "max_thrust_kn": 39144,
+      "max_speed_m_s": 11200,
+      "fairing_diameter_m": 8.4,
+      "compatible_orbit_types": [
+        "LOW_EARTH_ORBIT",
+        "TRANS_LUNAR_INJECTION",
+        "LUNAR_ORBIT"
+      ],
+      "description": "NASA super heavy-lift launch vehicle - Artemis program, crewed lunar missions"
+    }
+  ]
 }
