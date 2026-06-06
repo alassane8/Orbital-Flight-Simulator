@@ -128,7 +128,7 @@ def select_launch_site(
             status_dot = f"{GREEN}●{RESET}" if is_compat else f"{color}●{RESET}"
 
             print(f"  {prefix} {status_dot} {name_c}{site.name}{RESET}  "
-                  f"{GRAY}[{site.launch_site_code}] {site.country}{RESET}")
+                  f"{GRAY}[{site.code}] {site.country}{RESET}")
 
             if i == selected_index:
                 print(f"       {GRAY}Operator : {site.operator}{RESET}")
@@ -188,6 +188,6 @@ def select_launch_site(
     clear()
     print(
         f"{GRAY}? Choose a launch site "
-        f"{CYAN}❯ {chosen_site.name} [{chosen_site.launch_site_code}]{RESET}\n"
+        f"{CYAN}❯ {chosen_site.name} [{chosen_site.code}]{RESET}\n"
     )
     return chosen_site
