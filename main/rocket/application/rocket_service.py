@@ -21,7 +21,7 @@ def select_rocket(rockets: dict) -> object:
                 print(f"  {rocket.description}")
                 print(f"  Compatible orbits:")
                 for orbit in rocket.compatible_orbit_types:
-                    print(f"    · {orbit}")
+                    print(f"    · {orbit.value}")
                 print(RESET, end="")
             else:
                 print(f"{GRAY}  {rocket.name} | {rocket.manufacturer}{RESET}")

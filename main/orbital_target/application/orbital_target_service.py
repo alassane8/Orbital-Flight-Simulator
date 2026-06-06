@@ -20,9 +20,9 @@ def select_orbital_target(rocket: Rocket, orbital_targets: dict[OrbitalTarget]) 
         print(f"{GRAY}? Choose a desired orbit type{RESET}\n")
         for i, orbit in enumerate(compatible_orbit_type):
             if i == selected_orbit:
-                print(f"{CYAN}❯ {orbit}{RESET}")
+                print(f"{CYAN}❯ {orbit.value}{RESET}")
             else:
-                print(f"{GRAY}  {orbit}{RESET}")
+                print(f"{GRAY}  {orbit.value}{RESET}")
         print(f"\n{GRAY}  ↑↓ to navigate · Enter to confirm{RESET}")
 
     # Select desired orbit from compatible orbit types
