@@ -7,6 +7,7 @@ from orbital_target.domain.orbit_type import OrbitType
 @dataclass
 class OrbitalTarget:
     id: str
+    code: str
     name: str
     orbit_type: OrbitType
     altitude_perigee_km: float

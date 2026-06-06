@@ -6,6 +6,7 @@ from orbital_target.domain.orbit_type import OrbitType
 @dataclass
 class Rocket:
     id: str
+    code: str
     name: str
     manufacturer: str
     nb_stages: int

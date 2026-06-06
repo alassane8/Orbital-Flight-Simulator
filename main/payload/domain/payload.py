@@ -9,6 +9,7 @@ from payload.domain.payload_category import PayloadCategory
 @dataclass
 class Payload:
     id: str
+    code: str
     name: str
     mass_kg: str
     category: PayloadCategory

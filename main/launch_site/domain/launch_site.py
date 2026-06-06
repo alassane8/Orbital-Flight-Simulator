@@ -5,7 +5,7 @@ from launch_site.domain.launch_site_status import LaunchSiteStatus
 @dataclass
 class LaunchSite:
     id: str 
-    launch_site_code: str
+    code: str
     status: LaunchSiteStatus
     lat: float
     lon: float
