@@ -3,6 +3,7 @@ from datetime import datetime
 import uuid
 
 from launch_site.domain.launch_site import LaunchSite
+from orbital_target.domain.orbit_type import OrbitType
 from orbital_target.domain.orbital_target import OrbitalTarget
 from payload.domain.payload import Payload
 from rocket.domain.rocket import Rocket
@@ -12,6 +13,7 @@ def create_rockets(rockets_data: dict) -> dict[Rocket]:
     for rocket in rockets_data.get("rockets", []):
         obj = Rocket(
             rocket.get("id", uuid.uuid4()),
+            rocket.get("code", ""),
             rocket.get("name", ""),
             rocket.get("manufacturer", ""),
             rocket.get("nb_stages", 0),
@@ -22,7 +24,7 @@ def create_rockets(rockets_data: dict) -> dict[Rocket]:
             rocket.get("max_thrust_kn", 0),
             rocket.get("max_speed_m_s", 0),
             rocket.get("fairing_diameter_m", 0.0),
-            rocket.get("compatible_orbit_types", []),
+            [OrbitType(o) for o in rocket.get("compatible_orbit_types", [])],
             rocket.get("description", ""),
             rocket.get("created_at", datetime.now()),
             rocket.get("updated_at", datetime.now()),
@@ -35,8 +37,9 @@ def create_orbital_targets(orbital_targets_data: dict) -> dict[OrbitalTarget]:
     for target in orbital_targets_data.get("orbital_targets", []):
         obj = OrbitalTarget(
             target.get("id", uuid.uuid4()),
+            target.get("code", ""),
             target.get("name", ""),
-            target.get("orbit_type", ""),
+            OrbitType(target.get("orbit_type", "")),  
             target.get("altitude_perigee_km", 0),
             target.get("altitude_apogee_km", 0),
             target.get("inclination_deg", 0.0),
@@ -50,6 +53,7 @@ def create_payloads(payloads_data: dict) -> dict[Payload]:
     for payload in payloads_data.get("payloads", []):
         obj = Payload(
             payload.get("id", uuid.uuid4()),
+            payload.get("code", ""),
             payload.get("name", ""),
             payload.get("mass_kg", 0),
             payload.get("category", ""),
@@ -64,7 +68,7 @@ def create_launch_sites(launch_sites_data: dict) -> dict[LaunchSite]:
     for site in launch_sites_data.get("launch_sites", []):
         obj = LaunchSite(
             site.get("id", uuid.uuid4()),
-            site.get("launch_site_code", ""),
+            site.get("code", ""),
             site.get("status", ""),
             site.get("lat", 0.0),
             site.get("lon", 0.0),
