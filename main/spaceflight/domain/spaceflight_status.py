@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class FlightStatus(str, Enum):
+class SpaceflightStatus(str, Enum):
     # Pré-lancement
     INITIALIZING = "INITIALIZING"
     PRE_LAUNCH = "PRE_LAUNCH"
