@@ -1,16 +1,18 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from spaceflight.domain.spaceflight_status import SpaceFlightStatus
+from payload.domain.payload import Payload
+from spaceflight.domain.spaceflight_status import SpaceflightStatus
 
 @dataclass
 class Spaceflight: 
     id: str
     spaceflight_code: str
-    spaceflight_status: SpaceFlightStatus
-    spaceship_id: str
-    departure_lauch_site_id: str
+    spaceflight_status: SpaceflightStatus
+    spaceship_id: str    
+    on_board_payloads: list[Payload]
     orbital_target_id: str
+    departure_lauch_site_id: str
     altitude_km: float
     fuel_kg: float
     fuel_burn_rate_kg_per_s: float
