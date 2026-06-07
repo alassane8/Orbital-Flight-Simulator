@@ -3,6 +3,7 @@ project(orbital_core)
 
 set(CMAKE_CXX_STANDARD 17)
 
+set(PYBIND11_FINDPYTHON ON)
 find_package(pybind11 REQUIRED)
 
 pybind11_add_module(orbital_core
