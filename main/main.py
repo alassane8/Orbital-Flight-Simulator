@@ -17,8 +17,13 @@ def main() -> int:
     launch_site = select_launch_site(rocket, orbital_target, launch_sites)
     on_board_payloads = payload_service.add_payloads_to_rocket(rocket, payloads)
 
-    delta_v = orbital_core.compute_delta_v(to_cpp_launch_site(launch_site), to_cpp_orbital_target(orbital_target))
-    fuel_kg = orbital_core.compute_fuel(to_cpp_rocket(rocket), to_cpp_payloads(on_board_payloads), delta_v)
+    delta_v = orbital_core.compute_delta_v(to_cpp_launch_site(launch_site), 
+                                           to_cpp_orbital_target(orbital_target), 
+                                           to_cpp_rocket(rocket))
+    
+    fuel_kg = orbital_core.compute_fuel(to_cpp_rocket(rocket), 
+                                        to_cpp_payloads(on_board_payloads), 
+                                        delta_v)
 
     spaceflight = create_spaceflight(rocket, on_board_payloads, launch_site, orbital_target, fuel_kg)
     
