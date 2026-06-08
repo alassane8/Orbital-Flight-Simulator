@@ -82,6 +82,18 @@ inline void bind_models(py::module_& m) {
         .def_readwrite("compatible_orbit_types",&Payload::compatible_orbit_types)
         .def_readwrite("description",           &Payload::description);
 
+    py::class_<Stage>(m, "Stage")
+        .def(py::init<>())
+        .def_readwrite("stage_number",   &Stage::stage_number)
+        .def_readwrite("thrust_kn",      &Stage::thrust_kn)
+        .def_readwrite("isp_vac_s",      &Stage::isp_vac_s)
+        .def_readwrite("isp_sl_s",       &Stage::isp_sl_s)
+        .def_readwrite("fuel_mass_kg",   &Stage::fuel_mass_kg)
+        .def_readwrite("dry_mass_kg",    &Stage::dry_mass_kg)
+        .def_readwrite("t_burn_s",       &Stage::t_burn_s)
+        .def_readwrite("h_mean_m",       &Stage::h_mean_m)
+        .def_readwrite("gamma_mean_deg", &Stage::gamma_mean_deg);
+
     py::class_<Rocket>(m, "Rocket")
         .def(py::init<>())
         .def_readwrite("id",                      &Rocket::id)
@@ -97,6 +109,7 @@ inline void bind_models(py::module_& m) {
         .def_readwrite("max_speed_m_s",           &Rocket::max_speed_m_s)
         .def_readwrite("fairing_diameter_m",      &Rocket::fairing_diameter_m)
         .def_readwrite("compatible_orbit_types",  &Rocket::compatible_orbit_types)
+        .def_readwrite("stages",                  &Rocket::stages)
         .def_readwrite("description",             &Rocket::description);
 
     py::class_<Spaceflight>(m, "Spaceflight")
@@ -118,6 +131,7 @@ inline void bind_functions(py::module_& m) {
     m.def("compute_delta_v", &compute_delta_v,
         py::arg("launch_site"),
         py::arg("target"),
+        py::arg("rocket"),
         "Compute the delta-v (m/s) required to reach the orbital target from the given launch site.");
 
     m.def("compute_fuel", &compute_fuel,

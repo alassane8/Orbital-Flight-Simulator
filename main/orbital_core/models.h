@@ -36,6 +36,18 @@ struct Payload {
     std::string description;
 };
 
+struct Stage {
+    int::stage_number;
+    double thrust_kn;
+    double isp_vac_s;
+    double isp_sl_s;
+    double fuel_mass_kg;
+    double dry_mass_kg;
+    double t_burn_s;
+    double h_mean_m;
+    double gamma_mean_deg;
+};
+
 struct Rocket {
     std::string id;
     std::string code;
@@ -50,6 +62,7 @@ struct Rocket {
     int max_speed_m_s;
     double fairing_diameter_m;
     std::vector<OrbitType> compatible_orbit_types;
+    std::vector<Stage> stages;
     std::string description;
 };
 
