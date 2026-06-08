@@ -20,6 +20,30 @@
         "GEOSTATIONARY_ORBIT",
         "TRANS_LUNAR_INJECTION"
       ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 7607,
+          "isp_vac_s": 312,
+          "isp_sl_s": 282,
+          "fuel_mass_kg": 287000,
+          "dry_mass_kg": 22200,
+          "t_burn_s": 162,
+          "h_mean_m": 40000,
+          "gamma_mean_deg": 50
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 934,
+          "isp_vac_s": 348,
+          "isp_sl_s": 348,
+          "fuel_mass_kg": 108000,
+          "dry_mass_kg": 4000,
+          "t_burn_s": 397,
+          "h_mean_m": 150000,
+          "gamma_mean_deg": 8
+        }
+      ],
       "description": "Reusable medium-lift launch vehicle - recoverable first stage"
     },
     {
@@ -44,6 +68,30 @@
         "TRANS_LUNAR_INJECTION",
         "LUNAR_ORBIT"
       ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 22819,
+          "isp_vac_s": 312,
+          "isp_sl_s": 282,
+          "fuel_mass_kg": 860000,
+          "dry_mass_kg": 66600,
+          "t_burn_s": 162,
+          "h_mean_m": 40000,
+          "gamma_mean_deg": 50
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 934,
+          "isp_vac_s": 348,
+          "isp_sl_s": 348,
+          "fuel_mass_kg": 108000,
+          "dry_mass_kg": 4000,
+          "t_burn_s": 397,
+          "h_mean_m": 150000,
+          "gamma_mean_deg": 8
+        }
+      ],
       "description": "Reusable heavy-lift tri-core launch vehicle - 3 recoverable boosters"
     },
     {
@@ -63,6 +111,30 @@
         "LOW_EARTH_ORBIT",
         "SUN_SYNCHRONOUS_ORBIT",
         "GEOSTATIONARY_ORBIT"
+      ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 13400,
+          "isp_vac_s": 278,
+          "isp_sl_s": 254,
+          "fuel_mass_kg": 360000,
+          "dry_mass_kg": 30000,
+          "t_burn_s": 135,
+          "h_mean_m": 45000,
+          "gamma_mean_deg": 48
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 180,
+          "isp_vac_s": 457,
+          "isp_sl_s": 457,
+          "fuel_mass_kg": 31000,
+          "dry_mass_kg": 2100,
+          "t_burn_s": 720,
+          "h_mean_m": 180000,
+          "gamma_mean_deg": 6
+        }
       ],
       "description": "European launch vehicle - 2 P120C booster configuration"
     },
@@ -87,6 +159,30 @@
         "HIGHLY_ELLIPTICAL_ORBIT",
         "TRANS_LUNAR_INJECTION"
       ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 15600,
+          "isp_vac_s": 278,
+          "isp_sl_s": 254,
+          "fuel_mass_kg": 480000,
+          "dry_mass_kg": 38000,
+          "t_burn_s": 145,
+          "h_mean_m": 45000,
+          "gamma_mean_deg": 48
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 180,
+          "isp_vac_s": 457,
+          "isp_sl_s": 457,
+          "fuel_mass_kg": 31000,
+          "dry_mass_kg": 2100,
+          "t_burn_s": 720,
+          "h_mean_m": 180000,
+          "gamma_mean_deg": 6
+        }
+      ],
       "description": "European launch vehicle - 4 P120C boosters, heavy-lift configuration"
     },
     {
@@ -105,6 +201,52 @@
       "compatible_orbit_types": [
         "LOW_EARTH_ORBIT",
         "SUN_SYNCHRONOUS_ORBIT"
+      ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 3015,
+          "isp_vac_s": 280,
+          "isp_sl_s": 257,
+          "fuel_mass_kg": 122000,
+          "dry_mass_kg": 8500,
+          "t_burn_s": 110,
+          "h_mean_m": 30000,
+          "gamma_mean_deg": 55
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 305,
+          "isp_vac_s": 293,
+          "isp_sl_s": 293,
+          "fuel_mass_kg": 23600,
+          "dry_mass_kg": 2000,
+          "t_burn_s": 110,
+          "h_mean_m": 100000,
+          "gamma_mean_deg": 20
+        },
+        {
+          "stage_number": 3,
+          "thrust_kn": 67,
+          "isp_vac_s": 295,
+          "isp_sl_s": 295,
+          "fuel_mass_kg": 10500,
+          "dry_mass_kg": 1300,
+          "t_burn_s": 165,
+          "h_mean_m": 200000,
+          "gamma_mean_deg": 8
+        },
+        {
+          "stage_number": 4,
+          "thrust_kn": 2.4,
+          "isp_vac_s": 315,
+          "isp_sl_s": 315,
+          "fuel_mass_kg": 820,
+          "dry_mass_kg": 190,
+          "t_burn_s": 317,
+          "h_mean_m": 400000,
+          "gamma_mean_deg": 2
+        }
       ],
       "description": "European light launch vehicle - ideal for small LEO/SSO satellites"
     },
@@ -125,6 +267,30 @@
         "LOW_EARTH_ORBIT",
         "TRANS_LUNAR_INJECTION",
         "LUNAR_ORBIT"
+      ],
+      "stages": [
+        {
+          "stage_number": 1,
+          "thrust_kn": 39144,
+          "isp_vac_s": 366,
+          "isp_sl_s": 330,
+          "fuel_mass_kg": 979452,
+          "dry_mass_kg": 85000,
+          "t_burn_s": 480,
+          "h_mean_m": 60000,
+          "gamma_mean_deg": 45
+        },
+        {
+          "stage_number": 2,
+          "thrust_kn": 110,
+          "isp_vac_s": 462,
+          "isp_sl_s": 462,
+          "fuel_mass_kg": 27220,
+          "dry_mass_kg": 3500,
+          "t_burn_s": 1125,
+          "h_mean_m": 200000,
+          "gamma_mean_deg": 5
+        }
       ],
       "description": "NASA super heavy-lift launch vehicle - Artemis program, crewed lunar missions"
     }
