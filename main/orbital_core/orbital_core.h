@@ -10,9 +10,10 @@
  *
  * @param launch_site  The launch site from which the rocket departs
  * @param target       The orbital target (altitude, inclination, orbit type)
+ * @param rocket       The rocket
  * @return             The required delta-v in m/s
  */
-double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target);
+double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target, const Rocket& rocket);
 
 /**
  * Computes the total fuel mass (kg) required for the mission using the Tsiolkovsky rocket equation.
