@@ -3,16 +3,33 @@ from datetime import datetime
 import uuid
 
 from launch_site.domain.launch_site import LaunchSite
+from rocket.domain.stage import Stage
 from orbital_target.domain.orbit_type import OrbitType
 from orbital_target.domain.orbital_target import OrbitalTarget
 from payload.domain.payload import Payload
 from rocket.domain.rocket import Rocket
 
-def create_rockets(rockets_data: dict) -> dict[Rocket]:
+def create_rockets(rockets_data: dict) -> dict[str, Rocket]:
     all_rockets = {}
     for rocket in rockets_data.get("rockets", []):
+        stages = [
+            Stage(s.get("stage_number"),
+                s.get("thrust_kn"),
+                s.get("isp_vac_s"),
+                s.get("isp_sl_s"),
+                s.get("fuel_mass_kg"),
+                s.get("dry_mass_kg"),
+                s.get("t_burn_s"),
+                s.get("h_mean_m"),
+                s.get("gamma_mean_deg"),
+                s.get("created_at", datetime.now()),
+                s.get("updated_at", datetime.now()),
+            )
+            for s in rocket.get("stages", [])
+        ]
+
         obj = Rocket(
-            rocket.get("id", uuid.uuid4()),
+            rocket.get("id", str(uuid.uuid4())),
             rocket.get("code", ""),
             rocket.get("name", ""),
             rocket.get("manufacturer", ""),
@@ -25,11 +42,12 @@ def create_rockets(rockets_data: dict) -> dict[Rocket]:
             rocket.get("max_speed_m_s", 0),
             rocket.get("fairing_diameter_m", 0.0),
             [OrbitType(o) for o in rocket.get("compatible_orbit_types", [])],
+            stages,
             rocket.get("description", ""),
             rocket.get("created_at", datetime.now()),
             rocket.get("updated_at", datetime.now()),
         )
-        all_rockets[rocket.get("id")] = obj
+        all_rockets[obj.id] = obj
     return all_rockets
     
 def create_orbital_targets(orbital_targets_data: dict) -> dict[OrbitalTarget]:
