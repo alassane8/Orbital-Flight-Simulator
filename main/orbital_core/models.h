@@ -37,7 +37,7 @@ struct Payload {
 };
 
 struct Stage {
-    int::stage_number;
+    int stage_number;
     double thrust_kn;
     double isp_vac_s;
     double isp_sl_s;
