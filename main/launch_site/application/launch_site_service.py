@@ -66,7 +66,7 @@ def _compatibility_label(site: LaunchSite, target: OrbitalTarget) -> tuple[str, 
     diff = abs(abs(site.lat) - required)
     if diff <= INCLINATION_MARGIN_DEG:
         return GREEN, "optimal"
-    elif diff <= 10:
+    elif diff <= 15:
         return YELLOW, f"Δ{diff:.0f}° Δv penalty"
     else:
         return RED, f"Δ{diff:.0f}° high penalty"
