@@ -19,7 +19,8 @@ def main() -> int:
 
     delta_v = orbital_core.compute_delta_v(to_cpp_launch_site(launch_site), 
                                            to_cpp_orbital_target(orbital_target), 
-                                           to_cpp_rocket(rocket))
+                                           to_cpp_rocket(rocket), 
+                                           to_cpp_payloads(on_board_payloads))
     
     fuel_kg = orbital_core.compute_fuel(to_cpp_rocket(rocket), 
                                         to_cpp_payloads(on_board_payloads), 
