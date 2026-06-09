@@ -13,7 +13,7 @@
  * @param rocket       The rocket
  * @return             The required delta-v in m/s
  */
-double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target, const Rocket& rocket);
+double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target, const Rocket& rocket, const list& payloads);
 
 /**
  * Computes the total fuel mass (kg) required for the mission using the Tsiolkovsky rocket equation.
@@ -28,7 +28,7 @@ double compute_fuel(const Rocket& rocket, const std::vector<Payload>& payloads, 
 // Fonctions internes (déclarées ici pour être visibles dans tout le .cpp)
 double compute_delta_v_orbital(const LaunchSite& launch_site, const OrbitalTarget& target);
 double compute_delta_v_gravity_drag(const Rocket& rocket);
-double compute_delta_v_aero_drag();
+double compute_delta_v_aero_drag(const Rocket& rocket);
 double compute_delta_v_steering();
 double compute_delta_v_plan_change();
  
