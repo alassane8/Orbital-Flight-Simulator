@@ -2,18 +2,19 @@
 #include "orbital_core.h"
 #include "constants.h"
 #include <cmath>
+#include <iostream>
 
-double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target, const Rocket& rocket, const std::vector<Payload>& payloads){
+double compute_delta_v(const LaunchSite& launch_site, const OrbitalTarget& target, const Rocket& rocket, const std::vector<Payload>& on_board_payloads){
     double v_orbital = compute_delta_v_orbital(launch_site, target);
     double v_gravity_drag = compute_delta_v_gravity_drag(rocket);
-    double v_aero_drag = compute_delta_v_aero_drag(rocket, payloads);
+    double v_aero_drag = compute_delta_v_aero_drag(rocket, on_board_payloads);
     double v_steering = compute_delta_v_steering();
     double v_plan_change = compute_delta_v_plan_change();
-
+    
     return v_orbital + v_gravity_drag + v_aero_drag + v_steering + v_plan_change;
 }
 
-double compute_fuel(const Rocket& rocket, const std::vector<Payload>& payloads, double delta_v){
+double compute_fuel(const Rocket& rocket, const std::vector<Payload>& on_board_payloads, double delta_v){
     return 0.0; // TODO: implémenter
 }
 
@@ -44,11 +45,11 @@ double compute_delta_v_gravity_drag(const Rocket& rocket) {
     return dv_gravity_drag;
 }
 
-double compute_delta_v_aero_drag(const Rocket& rocket, const std::vector<Payload>& payloads) {
+double compute_delta_v_aero_drag(const Rocket& rocket, const std::vector<Payload>& on_board_payloads) {
     double payload_kg = 0.0; 
 
-    for (int i = 0; i < (int)payloads.size(); i++) {
-        payload_kg += payloads[i].mass_kg;
+    for (int i = 0; i < (int)on_board_payloads.size(); i++) {
+        payload_kg += on_board_payloads[i].mass_kg;
     }
 
     const Stage& stage = rocket.stages[0];

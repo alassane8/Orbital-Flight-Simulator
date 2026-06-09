@@ -92,8 +92,8 @@ inline void bind_models(py::module_& m) {
         .def_readwrite("dry_mass_kg",    &Stage::dry_mass_kg)
         .def_readwrite("t_burn_s",       &Stage::t_burn_s)
         .def_readwrite("h_mean_m",       &Stage::h_mean_m)
-        .def_readwrite("gamma_mean_deg", &Stage::gamma_mean_deg);
-        .def_readwrite("cd",             &Stage::cd);
+        .def_readwrite("gamma_mean_deg", &Stage::gamma_mean_deg)
+        .def_readwrite("cd",             &Stage::cd)
         .def_readwrite("v_maxq_m_s",     &Stage::v_maxq_m_s);
 
     py::class_<Rocket>(m, "Rocket")
