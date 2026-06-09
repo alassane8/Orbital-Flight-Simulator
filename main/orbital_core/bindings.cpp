@@ -93,6 +93,8 @@ inline void bind_models(py::module_& m) {
         .def_readwrite("t_burn_s",       &Stage::t_burn_s)
         .def_readwrite("h_mean_m",       &Stage::h_mean_m)
         .def_readwrite("gamma_mean_deg", &Stage::gamma_mean_deg);
+        .def_readwrite("cd",             &Stage::cd);
+        .def_readwrite("v_maxq_m_s",     &Stage::v_maxq_m_s);
 
     py::class_<Rocket>(m, "Rocket")
         .def(py::init<>())
@@ -132,6 +134,7 @@ inline void bind_functions(py::module_& m) {
         py::arg("launch_site"),
         py::arg("target"),
         py::arg("rocket"),
+        py::arg("payloads"),
         "Compute the delta-v (m/s) required to reach the orbital target from the given launch site.");
 
     m.def("compute_fuel", &compute_fuel,

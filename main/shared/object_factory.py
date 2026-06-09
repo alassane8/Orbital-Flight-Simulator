@@ -22,6 +22,8 @@ def create_rockets(rockets_data: dict) -> dict[str, Rocket]:
                 s.get("t_burn_s"),
                 s.get("h_mean_m"),
                 s.get("gamma_mean_deg"),
+                s.get("cd"),
+                s.get("v_maxq_m_s"),
                 s.get("created_at", datetime.now()),
                 s.get("updated_at", datetime.now()),
             )

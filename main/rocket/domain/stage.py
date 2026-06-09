@@ -12,6 +12,8 @@ class Stage:
     t_burn_s: float
     h_mean_m: float
     gamma_mean_deg: float
-    
+    cd: float
+    v_maxq_m_s: float
+
     created_at: datetime = field(default_factory=datetime.now)
     updated_at: datetime = field(default_factory=datetime.now)

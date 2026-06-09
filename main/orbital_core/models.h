@@ -46,6 +46,8 @@ struct Stage {
     double t_burn_s;
     double h_mean_m;
     double gamma_mean_deg;
+    double cd;
+    double v_maxq_m_s;
 };
 
 struct Rocket {

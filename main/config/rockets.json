@@ -30,7 +30,9 @@
           "dry_mass_kg": 22200,
           "t_burn_s": 162,
           "h_mean_m": 40000,
-          "gamma_mean_deg": 50
+          "gamma_mean_deg": 50,
+          "cd": 0.35,
+          "v_maxq_m_s": 440
         },
         {
           "stage_number": 2,
@@ -41,7 +43,9 @@
           "dry_mass_kg": 4000,
           "t_burn_s": 397,
           "h_mean_m": 150000,
-          "gamma_mean_deg": 8
+          "gamma_mean_deg": 8,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "Reusable medium-lift launch vehicle - recoverable first stage"
@@ -78,7 +82,9 @@
           "dry_mass_kg": 66600,
           "t_burn_s": 162,
           "h_mean_m": 40000,
-          "gamma_mean_deg": 50
+          "gamma_mean_deg": 50,
+          "cd": 0.35,
+          "v_maxq_m_s": 430
         },
         {
           "stage_number": 2,
@@ -89,7 +95,9 @@
           "dry_mass_kg": 4000,
           "t_burn_s": 397,
           "h_mean_m": 150000,
-          "gamma_mean_deg": 8
+          "gamma_mean_deg": 8,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "Reusable heavy-lift tri-core launch vehicle - 3 recoverable boosters"
@@ -122,7 +130,9 @@
           "dry_mass_kg": 30000,
           "t_burn_s": 135,
           "h_mean_m": 45000,
-          "gamma_mean_deg": 48
+          "gamma_mean_deg": 48,
+          "cd": 0.38,
+          "v_maxq_m_s": 420
         },
         {
           "stage_number": 2,
@@ -133,7 +143,9 @@
           "dry_mass_kg": 2100,
           "t_burn_s": 720,
           "h_mean_m": 180000,
-          "gamma_mean_deg": 6
+          "gamma_mean_deg": 6,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "European launch vehicle - 2 P120C booster configuration"
@@ -169,7 +181,9 @@
           "dry_mass_kg": 38000,
           "t_burn_s": 145,
           "h_mean_m": 45000,
-          "gamma_mean_deg": 48
+          "gamma_mean_deg": 48,
+          "cd": 0.38,
+          "v_maxq_m_s": 425
         },
         {
           "stage_number": 2,
@@ -180,7 +194,9 @@
           "dry_mass_kg": 2100,
           "t_burn_s": 720,
           "h_mean_m": 180000,
-          "gamma_mean_deg": 6
+          "gamma_mean_deg": 6,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "European launch vehicle - 4 P120C boosters, heavy-lift configuration"
@@ -212,7 +228,9 @@
           "dry_mass_kg": 8500,
           "t_burn_s": 110,
           "h_mean_m": 30000,
-          "gamma_mean_deg": 55
+          "gamma_mean_deg": 55,
+          "cd": 0.4,
+          "v_maxq_m_s": 390
         },
         {
           "stage_number": 2,
@@ -223,7 +241,9 @@
           "dry_mass_kg": 2000,
           "t_burn_s": 110,
           "h_mean_m": 100000,
-          "gamma_mean_deg": 20
+          "gamma_mean_deg": 20,
+          "cd": 0,
+          "v_maxq_m_s": 0
         },
         {
           "stage_number": 3,
@@ -234,7 +254,9 @@
           "dry_mass_kg": 1300,
           "t_burn_s": 165,
           "h_mean_m": 200000,
-          "gamma_mean_deg": 8
+          "gamma_mean_deg": 8,
+          "cd": 0,
+          "v_maxq_m_s": 0
         },
         {
           "stage_number": 4,
@@ -245,7 +267,9 @@
           "dry_mass_kg": 190,
           "t_burn_s": 317,
           "h_mean_m": 400000,
-          "gamma_mean_deg": 2
+          "gamma_mean_deg": 2,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "European light launch vehicle - ideal for small LEO/SSO satellites"
@@ -278,7 +302,9 @@
           "dry_mass_kg": 85000,
           "t_burn_s": 480,
           "h_mean_m": 60000,
-          "gamma_mean_deg": 45
+          "gamma_mean_deg": 45,
+          "cd": 0.3,
+          "v_maxq_m_s": 460
         },
         {
           "stage_number": 2,
@@ -289,7 +315,9 @@
           "dry_mass_kg": 3500,
           "t_burn_s": 1125,
           "h_mean_m": 200000,
-          "gamma_mean_deg": 5
+          "gamma_mean_deg": 5,
+          "cd": 0,
+          "v_maxq_m_s": 0
         }
       ],
       "description": "NASA super heavy-lift launch vehicle - Artemis program, crewed lunar missions"
